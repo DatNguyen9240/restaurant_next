@@ -1,0 +1,12 @@
+npm i --save-dev husky lint-staged
+npx husky install
+npm pkg set scripts.prepare="husky install"
+
+package.json
+"lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write --ignore-unknown"
+    ]
+  }
+
