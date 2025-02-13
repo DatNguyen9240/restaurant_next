@@ -359,9 +359,11 @@ const Body = () => {
                         We will deliver your food within 30 minutes in your
                         town, if we would.
                       </p>
-                      <button className="text-gray-800 flex items-center gap-2 mx-auto hover:text-gray-600">
-                        Read More <span>→</span>
-                      </button>
+                      <div className="relative">
+                        <button className="text-gray-800 flex items-center gap-2 mx-auto hover:text-gray-600">
+                          Read More <span>→</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -369,7 +371,7 @@ const Body = () => {
             </div>
 
             {/* Blog Section */}
-            <div className="mt-48 px-4 sm:px-8">
+            <div className="mt-48 px-4 sm:px-8 pb-16">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
                 {/* Left Blog Card */}
                 <div className="rounded-2xl flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left">
@@ -450,9 +452,16 @@ const Body = () => {
                     <br className="hidden lg:block" />
                     Those Interested. Sections 1.10.32.
                   </h2>
-                  <button className="bg-red-500 text-white px-10 py-3 text-base rounded-tl-none rounded-br-none rounded-tr-2xl rounded-bl-2xl hover:bg-red-600 transition flex items-center mt-8 mx-auto lg:mx-0">
-                    Read More →
-                  </button>
+                  <div className="relative">
+                    <button className="bg-red-500 text-white px-16 py-3 text-base rounded-tl-none rounded-br-none rounded-tr-2xl rounded-bl-2xl hover:bg-red-600 transition flex items-center mt-8 mx-auto lg:mx-0">
+                      Read More →
+                    </button>
+                    <img
+                      src="/images/vector2.png"
+                      alt="Vector decoration"
+                      className="absolute -right-24 top-1/2 -translate-y-1/2 w-48 h-auto"
+                    />
+                  </div>
                 </div>
                 <img
                   src="/images/card.png"
