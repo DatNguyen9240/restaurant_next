@@ -91,7 +91,7 @@ export default function Navbar() {
                 <span className="text-sm font-medium">Xem sơ đồ bàn</span>
               </button>
             </Link>
-            <div className="relative">
+            <Link href="/cart" className="relative">
               <button className="p-2 border border-red-200 shadow-md shadow-red-100 rounded-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +111,7 @@ export default function Navbar() {
                   2
                 </span>
               </button>
-            </div>
+            </Link>
             <Link href="/login">
               <button className="p-2 border border-red-200 shadow-md shadow-red-100 rounded-lg">
                 <svg
